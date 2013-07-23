@@ -39,12 +39,15 @@ void CCLayerHelpTest::addSprites()
     addSpriteFromPic("Icon.png", ccp(getWidth()*0.4, getHeight() *0.5),1,1,100,this, SCALE_MODE_X);
     addSpriteFromPic("Icon.png", ccp(getWidth()*0.6, getHeight() *0.5),1,1,100,this, SCALE_MODE_Y);
     addSpriteFromPic("Icon.png", ccp(getWidth()*0.8, getHeight() *0.5),1,1,100,this, SCALE_MODE_X_Y);
+    
+    addPic("Icon.png");
 }
 void CCLayerHelpTest::addButtons()
 {
     addButtonFromPic("Icon.png", "CloseSelected.png", ccp(getWidth()*0.2, getHeight() *0.3), menu_selector(CCLayerHelpTest::buttonPress),TAG_MENU_0);
     addButtonFromPic("Icon.png", "CloseSelected.png", ccp(getWidth()*0.3, getHeight() *0.3), menu_selector(CCLayerHelpTest::buttonPress),TAG_MENU_1);
     addButtonFromPic("Icon.png", "CloseSelected.png", ccp(getWidth()*0.4, getHeight() *0.3), menu_selector(CCLayerHelpTest::buttonPress),TAG_MENU_2);
+    addPic("CloseSelected.png");
 }
 void CCLayerHelpTest::buttonPress(CCObject* pSender)
 {

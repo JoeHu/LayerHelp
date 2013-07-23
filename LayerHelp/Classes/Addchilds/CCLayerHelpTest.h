@@ -10,8 +10,8 @@
 #define __LayerHelp__CCLayerHelpTest__
 
 #include "CCLayerHelp.h"
-
-class CCLayerHelpTest:public CCLayerHelp {
+#include "CCResourceManger.h"
+class CCLayerHelpTest:public CCLayerHelp, public CCResourceManger {
     
     
 public:

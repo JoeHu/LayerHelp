@@ -3,34 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>983F8F03-B1DD-4B40-AE01-445775C11FC2</string>
+	<string>1DAF53AB-B69F-4EF4-B836-9851C7DEBD84</string>
 	<key>IDESourceControlProjectName</key>
 	<string>LayerHelp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>DC9DFD6C-4563-49F1-869E-8C238CB91D00</key>
-		<string>ssh://github.com/ls306196689/LayerHelp.git</string>
+		<key>142B4056-791E-4F12-8ED2-7479F080ECF5</key>
+		<string>ssh://10.0.1.10//git/LayerHelp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>LayerHelp/LayerHelp.xcodeproj/project.xcworkspace</string>
+	<string>LayerHelp.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>DC9DFD6C-4563-49F1-869E-8C238CB91D00</key>
-		<string>../../..</string>
+		<key>142B4056-791E-4F12-8ED2-7479F080ECF5</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/ls306196689/LayerHelp.git</string>
+	<string>ssh://10.0.1.10//git/LayerHelp.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>DC9DFD6C-4563-49F1-869E-8C238CB91D00</string>
+	<string>142B4056-791E-4F12-8ED2-7479F080ECF5</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>DC9DFD6C-4563-49F1-869E-8C238CB91D00</string>
+			<string>142B4056-791E-4F12-8ED2-7479F080ECF5</string>
 			<key>IDESourceControlWCCName</key>
 			<string>LayerHelp</string>
 		</dict>

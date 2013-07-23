@@ -11,6 +11,8 @@
 		18015ADB179E22C800491932 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18015AD8179E22C800491932 /* libwebp.a */; };
 		18015ADC179E22C800491932 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18015AD9179E22C800491932 /* libwebsockets.a */; };
 		18015AE0179E322000491932 /* CCResourceManger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18015ADE179E322000491932 /* CCResourceManger.cpp */; };
+		18015AE3179E63B700491932 /* boss1_angry.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18015AE1179E63B700491932 /* boss1_angry.plist */; };
+		18015AE4179E63B700491932 /* boss1_angry.png in Resources */ = {isa = PBXBuildFile; fileRef = 18015AE2179E63B700491932 /* boss1_angry.png */; };
 		28674AC1179CC32D00C8DA4E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28674AC0179CC32D00C8DA4E /* QuartzCore.framework */; };
 		28674AC3179CC32D00C8DA4E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28674AC2179CC32D00C8DA4E /* OpenGLES.framework */; };
 		28674AC5179CC32D00C8DA4E /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28674AC4179CC32D00C8DA4E /* OpenAL.framework */; };
@@ -293,6 +295,8 @@
 		18015AD9179E22C800491932 /* libwebsockets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebsockets.a; path = libs/libwebsockets/ios/libwebsockets.a; sourceTree = "<group>"; };
 		18015ADE179E322000491932 /* CCResourceManger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCResourceManger.cpp; sourceTree = "<group>"; };
 		18015ADF179E322000491932 /* CCResourceManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCResourceManger.h; sourceTree = "<group>"; };
+		18015AE1179E63B700491932 /* boss1_angry.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = boss1_angry.plist; sourceTree = "<group>"; };
+		18015AE2179E63B700491932 /* boss1_angry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boss1_angry.png; sourceTree = "<group>"; };
 		28674ABD179CC32D00C8DA4E /* LayerHelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayerHelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28674AC0179CC32D00C8DA4E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		28674AC2179CC32D00C8DA4E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -969,6 +973,8 @@
 		28674AD1179CC32D00C8DA4E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				18015AE1179E63B700491932 /* boss1_angry.plist */,
+				18015AE2179E63B700491932 /* boss1_angry.png */,
 				28674AD2179CC32D00C8DA4E /* CloseNormal.png */,
 				28674AD4179CC32D00C8DA4E /* CloseSelected.png */,
 				28674AD6179CC32D00C8DA4E /* Default.png */,
@@ -2193,10 +2199,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				28674AD3179CC32D00C8DA4E /* CloseNormal.png in Resources */,
+				18015AE3179E63B700491932 /* boss1_angry.plist in Resources */,
 				28674AD5179CC32D00C8DA4E /* CloseSelected.png in Resources */,
 				28674AD7179CC32D00C8DA4E /* Default.png in Resources */,
 				28674AD9179CC32D00C8DA4E /* HelloWorld.png in Resources */,
 				28674ADB179CC32D00C8DA4E /* Icon-72.png in Resources */,
+				18015AE4179E63B700491932 /* boss1_angry.png in Resources */,
 				28674ADD179CC32D00C8DA4E /* Icon-Small-50.png in Resources */,
 				28674ADF179CC32D00C8DA4E /* Icon-Small.png in Resources */,
 				28674AE1179CC32D00C8DA4E /* Icon-Small@2x.png in Resources */,
@@ -2539,6 +2547,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2559,6 +2568,7 @@
 					"-websockets",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "269B3A75-52B9-463C-A7E3-A893BA256972";
 				USER_HEADER_SEARCH_PATHS = "\"LayerHelp/libs/Chipmunk/include/chipmunk\"";
 				WRAPPER_EXTENSION = app;
 			};
@@ -2568,6 +2578,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LayerHelp/Prefix.pch;
@@ -2587,6 +2598,7 @@
 					"-websockets",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "269B3A75-52B9-463C-A7E3-A893BA256972";
 				USER_HEADER_SEARCH_PATHS = "\"LayerHelp/libs/Chipmunk/include/chipmunk\"";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;

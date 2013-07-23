@@ -40,14 +40,16 @@ void CCLayerHelpTest::addSprites()
     addSpriteFromPic("Icon.png", ccp(getWidth()*0.6, getHeight() *0.5),1,1,100,this, SCALE_MODE_Y);
     addSpriteFromPic("Icon.png", ccp(getWidth()*0.8, getHeight() *0.5),1,1,100,this, SCALE_MODE_X_Y);
     
-    addPic("Icon.png");
+    CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("boss1_angry.plist");
+    addPlist("boss1_angry.plist");
+    addSpriteFromFrame("boss1_angry1.png", CCPointZero,1,1,112);
 }
 void CCLayerHelpTest::addButtons()
 {
     addButtonFromPic("Icon.png", "CloseSelected.png", ccp(getWidth()*0.2, getHeight() *0.3), menu_selector(CCLayerHelpTest::buttonPress),TAG_MENU_0);
     addButtonFromPic("Icon.png", "CloseSelected.png", ccp(getWidth()*0.3, getHeight() *0.3), menu_selector(CCLayerHelpTest::buttonPress),TAG_MENU_1);
     addButtonFromPic("Icon.png", "CloseSelected.png", ccp(getWidth()*0.4, getHeight() *0.3), menu_selector(CCLayerHelpTest::buttonPress),TAG_MENU_2);
-    addPic("CloseSelected.png");
+    
 }
 void CCLayerHelpTest::buttonPress(CCObject* pSender)
 {
@@ -58,6 +60,12 @@ void CCLayerHelpTest::buttonPress(CCObject* pSender)
             break;
         case TAG_MENU_1:
             setMenuButtonEnable(true, TAG_MENU_2);
+            break;
+        case TAG_MENU_2:
+            removeChildByTag(112);
+            releasePlist();
+//            CCSpriteFrameCache::sharedSpriteFrameCache()->removeUnusedSpriteFrames();
+//            CCTextureCache::sharedTextureCache()->removeUnusedTextures();
             break;
             
         default:

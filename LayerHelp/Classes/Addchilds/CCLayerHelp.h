@@ -17,7 +17,6 @@ enum SCALE_MODE{
     SCALE_MODE_X_Y    = 0X04,
 };
 class CCLayerHelp:public cocos2d::CCLayer {
-    //
     
 public:
     bool init();

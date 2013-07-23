@@ -10,6 +10,7 @@
 		18015ADA179E22C800491932 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18015AD7179E22C800491932 /* libcurl.a */; };
 		18015ADB179E22C800491932 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18015AD8179E22C800491932 /* libwebp.a */; };
 		18015ADC179E22C800491932 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18015AD9179E22C800491932 /* libwebsockets.a */; };
+		18015AE0179E322000491932 /* CCResourceManger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18015ADE179E322000491932 /* CCResourceManger.cpp */; };
 		28674AC1179CC32D00C8DA4E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28674AC0179CC32D00C8DA4E /* QuartzCore.framework */; };
 		28674AC3179CC32D00C8DA4E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28674AC2179CC32D00C8DA4E /* OpenGLES.framework */; };
 		28674AC5179CC32D00C8DA4E /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28674AC4179CC32D00C8DA4E /* OpenAL.framework */; };
@@ -290,6 +291,8 @@
 		18015AD7179E22C800491932 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = libs/libwebsockets/ios/libcurl.a; sourceTree = "<group>"; };
 		18015AD8179E22C800491932 /* libwebp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebp.a; path = libs/libwebsockets/ios/libwebp.a; sourceTree = "<group>"; };
 		18015AD9179E22C800491932 /* libwebsockets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebsockets.a; path = libs/libwebsockets/ios/libwebsockets.a; sourceTree = "<group>"; };
+		18015ADE179E322000491932 /* CCResourceManger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCResourceManger.cpp; sourceTree = "<group>"; };
+		18015ADF179E322000491932 /* CCResourceManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCResourceManger.h; sourceTree = "<group>"; };
 		28674ABD179CC32D00C8DA4E /* LayerHelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayerHelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28674AC0179CC32D00C8DA4E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		28674AC2179CC32D00C8DA4E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -909,6 +912,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18015ADD179E322000491932 /* ResourceManager */ = {
+			isa = PBXGroup;
+			children = (
+				18015ADE179E322000491932 /* CCResourceManger.cpp */,
+				18015ADF179E322000491932 /* CCResourceManger.h */,
+			);
+			name = ResourceManager;
+			path = Classes/ResourceManager;
+			sourceTree = "<group>";
+		};
 		28674AB4179CC32C00C8DA4E = {
 			isa = PBXGroup;
 			children = (
@@ -2107,6 +2120,7 @@
 		28674E61179CC33200C8DA4E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18015ADD179E322000491932 /* ResourceManager */,
 				28674E6D179CC5CE00C8DA4E /* Addchilds */,
 				28674E62179CC33200C8DA4E /* AppDelegate.h */,
 				28674E63179CC33200C8DA4E /* AppDelegate.cpp */,
@@ -2234,6 +2248,7 @@
 				28674B4D179CC32D00C8DA4E /* CCObject.cpp in Sources */,
 				28674B50179CC32D00C8DA4E /* CCSet.cpp in Sources */,
 				28674B53179CC32D00C8DA4E /* CCString.cpp in Sources */,
+				18015AE0179E322000491932 /* CCResourceManger.cpp in Sources */,
 				28674B56179CC32D00C8DA4E /* CCZone.cpp in Sources */,
 				28674B59179CC32D00C8DA4E /* cocos2d.cpp in Sources */,
 				28674B5C179CC32D00C8DA4E /* CCDrawingPrimitives.cpp in Sources */,
